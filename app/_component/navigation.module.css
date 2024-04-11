@@ -22,14 +22,14 @@
 }
 
 .navbar-exit-active {
-    background: #F3F5F4;
-    color: rgba(33, 37, 41, 0.65);
+    background: var(--main-background-color);
+    color: var(--main-color);
     transition: all 500ms;
 }
 
 .navbar-exit-done {
-    background: #F3F5F4;
-    color: rgba(33, 37, 41, 0.65);
+    background: var(--main-background-color);
+    color: var(--main-color);
 }
 
 .container {

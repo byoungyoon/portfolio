@@ -4,24 +4,32 @@
 
 .header {
     padding-top: 10rem;
-    /*background-image: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("/img/background.jpg");*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: scroll;*/
-    /*background-size: cover;*/
     height: 100dvh;
+    border-bottom: 2px dashed var(--border-color);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .skillSection {
-
+    border-bottom: 2px dashed var(--border-color);
 }
 
 .archivingSection {
+    border-bottom: 2px dashed var(--border-color);
+}
 
+.archivingSection .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .projectSection {
-
+    border-bottom: 2px dashed var(--border-color);
 }
 
 .careerSection {
@@ -29,5 +37,17 @@
 }
 
 .footer {
+    height: 80px;
+    background-color: var(--main-background-color);
+    color: var(--main-color-gray);
 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+section .title {
+    color: var(--main-color);
+    margin-bottom: 30px;
 }

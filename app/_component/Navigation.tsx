@@ -14,6 +14,7 @@ export default function Navigation() {
   };
 
   useEffect(() => {
+    setTop(window.scrollY === 0);
     document.addEventListener('scroll', onScroll);
 
     return () => document.removeEventListener('scroll', onScroll);

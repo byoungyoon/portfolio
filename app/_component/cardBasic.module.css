@@ -1,0 +1,13 @@
+.title {
+    margin-bottom: 10px;
+}
+
+.list {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 90px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
