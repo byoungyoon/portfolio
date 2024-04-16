@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 import { Sakura } from '@byoungyoon/by-asset';
 
 type Props = {
@@ -9,9 +9,5 @@ type Props = {
 };
 
 export default function CustomSakura({ children, total }: Props) {
-  return (
-    <div>
-      <Sakura total={total}>{children}</Sakura>
-    </div>
-  );
+  return <Sakura total={total}>{children}</Sakura>;
 }

@@ -6,7 +6,6 @@
     padding: 20px;
     color: var(--main-color);
     user-select: none;
-    pointer-events: none;
     background-color: #ffffff;
 }
 

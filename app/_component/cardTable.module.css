@@ -1,0 +1,12 @@
+.layer {
+    display: flex;
+}
+
+.layer > * {
+    padding: 1rem 0.5rem;
+}
+
+.key {
+    width: 70px;
+    border-right: 1px solid #ddd;
+}

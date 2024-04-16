@@ -1,0 +1,33 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+.optionLayer {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+}
+
+.optionButton {
+    background: var(--main-background-color);
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: inline-block;
+}
+
+.option {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,10 @@
+.resetButton {
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: var(--main-color-gray);
+    background: var(--main-background-color);
+}
