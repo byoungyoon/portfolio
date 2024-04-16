@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode, Suspense } from 'react';
+import { ReactNode } from 'react';
 import { Sakura } from '@byoungyoon/by-asset';
 
 type Props = {

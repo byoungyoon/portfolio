@@ -10,7 +10,6 @@
     background: transparent;
     color: rgba(33, 37, 41, 0.9);
 
-    font-family: var(--font-mono);
     font-weight: 700;
     transition: color 1000ms;
 }

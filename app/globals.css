@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'Reqular';
+    src: url('/font/Pretendard-Regular.otf') format("truetype");
+}
+
 :root {
-    --font-mono: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: "Reqular";
     --main-background-color: #F3F5F4;
     --main-color-gray: rgba(33, 37, 41, 0.65);
     --main-color: rgba(33, 37, 41, 0.9);
@@ -10,6 +15,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: var(--font-mono);
 }
 
 html,
