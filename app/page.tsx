@@ -2,6 +2,7 @@ import styles from './page.module.css';
 import Navigation from '@/app/_component/Navigation';
 import CustomSakura from '@/app/_component/CustomSakura';
 import { data as ArchivingData } from '@/app/_data/archivingData';
+import { data as SkillsData } from '@/app/_data/skillsData';
 import Card from '@/app/_component/Card';
 import CardBasic from '@/app/_component/CardBasic';
 import CustomTree from '@/app/_component/CustomTree';
@@ -31,6 +32,15 @@ export default function Home() {
         <div className={styles.container}>
           <section id="skills" className={styles.skillSection}>
             <h2 className={styles.title}>Skills</h2>
+            <div className={styles.content}>
+              {SkillsData.map((value) => (
+                <Card
+                  key={value.title}
+                  title={value.title}
+                  content={<CardBasic title={value.subTitle} content={value.subContent} />}
+                />
+              ))}
+            </div>
           </section>
           <section id="archiving" className={styles.archivingSection}>
             <h2 className={styles.title}>Archiving</h2>

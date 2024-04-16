@@ -1,5 +1,5 @@
 .main {
-
+    user-select: none;
 }
 
 .header {
@@ -20,7 +20,7 @@
 .headerLayer .accent {
     font-size: 1.1em;
     font-weight: bold;
-    border-bottom: 1px solid var(--main-color-gray);
+    border-bottom: 3px solid var(--main-color-gray);
 }
 
 .headerLayerTitle {
@@ -56,6 +56,12 @@
 
 .skillSection {
     border-bottom: 2px dashed var(--border-color);
+}
+
+.skillSection .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .archivingSection {
