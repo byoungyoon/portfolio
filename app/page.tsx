@@ -4,11 +4,13 @@ import CustomSakura from '@/app/_component/CustomSakura';
 import { data as ArchivingData } from '@/app/_data/archivingData';
 import { data as SkillsData } from '@/app/_data/skillsData';
 import { data as ProjectsData } from '@/app/_data/projectsData';
+import { data as CareerData } from '@/app/_data/careerData';
 import Card from '@/app/_component/Card';
 import CardBasic from '@/app/_component/CardBasic';
 import CustomTree from '@/app/_component/CustomTree';
 import { IoIosArrowDown } from 'react-icons/io';
 import CardProject from '@/app/_component/CardProject';
+import CardCareer from '@/app/_component/CardCareer';
 
 export default function Home() {
   return (
@@ -22,7 +24,7 @@ export default function Home() {
               안녕하세요. 웹 프론트엔드 개발자 <span className={styles.accent}>이병윤</span>입니다.
             </h2>
             <h3 className={styles.headerLayerContent}>
-              <span className={styles.accent}>꾸준히 발전</span>해야 하는 프론트엔드를 좋아합니다.
+              나무처럼 <span className={styles.accent}>지속적으로 성장</span>해야 하는 프론트엔드를 좋아합니다.
             </h3>
             <h3 className={styles.headerLayerContent}>
               어제의 코드보다 더 좋은 <span className={styles.accent}>오늘의 코드</span>를 희망합니다.
@@ -67,6 +69,11 @@ export default function Home() {
           </section>
           <section id="career" className={styles.careerSection}>
             <h2 className={styles.title}>Career</h2>
+            <div className={styles.content}>
+              {CareerData.map((value) => (
+                <Card key={value.title} title={value.title} content={<CardCareer {...value} />} />
+              ))}
+            </div>
           </section>
         </div>
       </CustomSakura>

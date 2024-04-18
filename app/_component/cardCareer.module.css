@@ -1,0 +1,34 @@
+.container {
+    width: 800px;
+}
+
+.container * {
+    line-height: 1.5rem;
+}
+
+.mainItem {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+}
+
+.mainItem h4 {
+    min-width: 150px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.item ul{
+    margin-top: 0.5rem;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-height: 90px;
+}
