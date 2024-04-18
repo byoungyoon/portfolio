@@ -78,6 +78,12 @@
     border-bottom: 2px dashed var(--border-color);
 }
 
+.projectSection .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .careerSection {
 
 }

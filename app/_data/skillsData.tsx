@@ -1,7 +1,7 @@
 export const data = [
   {
     title: 'NextJS',
-    subTitle: 'Next 13 이상의 App Router 개발을 선호합니다.',
+    subTitle: 'Next 13 이상의 App Router 개발을 좋아합니다.',
     subContent: [
       '여러 router(parallel, interception, dynamic)를 프로젝트 제작 시 사용해봤고 활용가능합니다.',
       '서버 컴포넌트와 클라이언트 컴포넌트를 분리하여 사용하는 것을 선호합니다.',
@@ -21,9 +21,9 @@ export const data = [
   },
   {
     title: 'TypeScript & JavaScript',
-    subTitle: '할당연산자을 위해 ES12(2021) 이상을 선호합니다.',
+    subTitle: 'TypeScript를 위해 ES11(2020) 이상을 좋아합니다.',
     subContent: [
-      'react-query, next-auth 등의 여러 라이브러리를 활용가능합니다.',
+      'react-query, next-auth, msw 등의 여러 라이브러리를 활용가능합니다.',
       'async, await, promise의 비동기 액션에 대해서 이해하고 사용가능합니다.',
       '여러 공통적으로 사용하는 함수에 대해서 클로져를 활용하여 재사용 가능합니다.',
       '그냥 자바스크립트를 잘합니다.',
@@ -40,12 +40,12 @@ export const data = [
   },
   {
     title: 'Style',
-    subTitle: '여러 style 라이브러리 중 vanilla extract을 선호합니다.',
+    subTitle: '여러 style 라이브러리 중 vanilla extract을 좋아합니다.',
     subContent: ['css module', 'tailwindcss', 'styled-component', 'vanilla extract'],
   },
   {
     title: 'ASM',
-    subTitle: '여러 ASM 중에 zustand을 선호합니다.',
+    subTitle: '여러 ASM 중에 zustand을 좋아합니다.',
     subContent: ['context api', 'redux', 'recoil', 'zustand'],
   },
   {

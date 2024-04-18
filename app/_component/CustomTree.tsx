@@ -25,7 +25,7 @@ export default function CustomTree() {
 
   return (
     <div className={styles.container}>
-      <Tree target="header" color={color.hex} reset={reset} isResize={true} defaultDepth={11} defaultCount={3} />
+      <Tree target="header" color={color.hex} reset={reset} isResize={true} defaultDepth={11} defaultCount={6} />
       <div className={styles.optionLayer}>
         {open && <CustomTreeOption color={color} setColor={setColor} onReset={onReset} />}
         <div className={styles.optionButton} onClick={onToggle}>

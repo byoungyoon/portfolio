@@ -3,10 +3,12 @@ import Navigation from '@/app/_component/Navigation';
 import CustomSakura from '@/app/_component/CustomSakura';
 import { data as ArchivingData } from '@/app/_data/archivingData';
 import { data as SkillsData } from '@/app/_data/skillsData';
+import { data as ProjectsData } from '@/app/_data/projectsData';
 import Card from '@/app/_component/Card';
 import CardBasic from '@/app/_component/CardBasic';
 import CustomTree from '@/app/_component/CustomTree';
 import { IoIosArrowDown } from 'react-icons/io';
+import CardProject from '@/app/_component/CardProject';
 
 export default function Home() {
   return (
@@ -56,7 +58,12 @@ export default function Home() {
             </div>
           </section>
           <section id="projects" className={styles.projectSection}>
-            <h2 className={styles.title}>Project</h2>
+            <h2 className={styles.title}>Projects & Development</h2>
+            <div className={styles.content}>
+              {ProjectsData.map((value) => (
+                <Card key={value.title} title={value.title} content={<CardProject {...value} />} />
+              ))}
+            </div>
           </section>
           <section id="career" className={styles.careerSection}>
             <h2 className={styles.title}>Career</h2>
