@@ -12,9 +12,11 @@ type Props = {
     key: string;
     value: string;
   }[];
+  contents: string[];
+  skills: string[];
 };
 
-export default function CardProject({ subTitle, images, urls }: Props) {
+export default function CardProject({ subTitle, images, urls, contents, skills }: Props) {
   const ImageJSX = images.map((image, index) => <Image key={index} className={styles.image} src={image} alt="image" />);
 
   return (
@@ -22,33 +24,31 @@ export default function CardProject({ subTitle, images, urls }: Props) {
       <h4 className={styles.subTitle}>{subTitle}</h4>
       <div className={styles.layer}>
         <CustomSwiper slide={ImageJSX} />
-        <div style={{ width: '450px' }}>
+        <div className={styles.articleGroup}>
           <article className={styles.readmeArticle}>
-            <div>
+            <div className={styles.item}>
               <Image src={Sakura} alt="sakura" width={20} height={20} />
               <strong>소개</strong>
-              <p>
-                소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개
-              </p>
-              <p>
-                소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개
-              </p>
+              <div className={styles.content}>
+                {contents.map((content, index) => (
+                  <p key={index}>{content}</p>
+                ))}
+              </div>
             </div>
-            <div>
+            <div className={styles.item}>
               <Image src={Sakura} alt="sakura" width={20} height={20} />
-              <strong>사용 스택</strong>
-              <p>Next.js, React-Query, MSW</p>
+              <strong>스택</strong>
+              <p>{skills.join(', ')}</p>
             </div>
           </article>
           <div>
             <button type="button">ReadMe</button>
-            <button type="button">ReadMe</button>
-            <button type="button">ReadMe</button>
+            <button type="button">skill</button>
           </div>
           <div className={styles.border} />
           <article className={styles.infoArticle}>
             {urls.map((url) => (
-              <div key={url.key}>
+              <div className={styles.item} key={url.key}>
                 <Image src={Sakura} alt="sakura" width={20} height={20} />
                 <strong>{url.key}</strong>
                 <Link href={url.value} target="_blank">
