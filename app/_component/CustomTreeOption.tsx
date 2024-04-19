@@ -20,7 +20,7 @@ function ColorPicker({ color, setColor }: ColorPickerProps) {
           border: '1px solid black',
         }}
       />
-      <div style={{ width: '300px', marginTop: '0.5rem' }}>
+      <div className={styles.colorPicker}>
         <Saturation height={300} color={color} onChange={setColor} />
         <Hue color={color} onChange={setColor} />
       </div>

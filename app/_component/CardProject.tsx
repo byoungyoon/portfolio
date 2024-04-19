@@ -23,7 +23,9 @@ export default function CardProject({ subTitle, images, urls, contents, skills }
     <div className={styles.container}>
       <h4 className={styles.subTitle}>{subTitle}</h4>
       <div className={styles.layer}>
-        <CustomSwiper slide={ImageJSX} />
+        <div className={styles.swiperGroup}>
+          <CustomSwiper slide={ImageJSX} />
+        </div>
         <div className={styles.articleGroup}>
           <article className={styles.readmeArticle}>
             <div className={styles.item}>

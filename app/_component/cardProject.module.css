@@ -1,6 +1,79 @@
-.container {
-    display: flex;
-    flex-direction: column;
+@media screen {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .layer {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .swiperGroup {
+        width: 319px;
+        height: 100%;
+    }
+
+    .articleGroup {
+        width: 319px;
+    }
+}
+
+@media (min-width: 425px) {
+    .swiperGroup {
+        width: 369px;
+    }
+
+    .articleGroup {
+        width: 369px;
+    }
+}
+
+@media (min-width: 768px) {
+    .layer {
+        flex-direction: column;
+    }
+
+    .swiperGroup {
+        width: 660px;
+    }
+
+    .articleGroup {
+        width: 660px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .layer {
+        flex-direction: row;
+    }
+
+    .swiperGroup {
+        width: 400px;
+    }
+
+    .articleGroup {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .swiperGroup {
+        width: 450px;
+    }
+
+    .articleGroup {
+        width: 450px;
+    }
 }
 
 .container p {
@@ -9,11 +82,6 @@
 
 .subTitle {
     margin-bottom: 1rem;
-}
-
-.layer {
-    display: flex;
-    gap: 3rem;
 }
 
 .image {
@@ -26,10 +94,6 @@
     height: 1px;
     background: #ddd;
     margin: 1rem 0;
-}
-
-.articleGroup {
-    width: 450px;
 }
 
 .item {
