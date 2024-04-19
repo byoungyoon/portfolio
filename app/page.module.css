@@ -23,15 +23,6 @@
     border-bottom: 3px solid var(--main-color-gray);
 }
 
-.headerLayerTitle {
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-}
-
-.headerLayerContent {
-    font-weight: 500;
-}
-
 @keyframes motion {
     0% {
         margin-top: 2rem;
@@ -48,30 +39,101 @@
     animation: motion 0.6s infinite alternate;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
+@media screen {
+    .headerLayerTitle {
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+
+    .headerLayerContent {
+        font-weight: 500;
+        font-size: 0.87em;
+    }
+
+    .container {
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .skillSection .content {
+        display: grid;
+        gap: 10px;
+        padding: 0 0.5rem;
+        width: 100%;
+    }
+
+    .archivingSection .content {
+        display: grid;
+        gap: 10px;
+        padding: 0 0.5rem;
+        width: 100%;
+    }
 }
+
+@media (min-width: 768px) {
+    .headerLayerTitle {
+        font-size: 1.5em;
+    }
+
+    .headerLayerContent {
+        font-size: 1.17em;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    .skillSection .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .archivingSection .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .skillSection .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .archivingSection .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .skillSection .content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .archivingSection .content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 
 .skillSection {
     border-bottom: 2px dashed var(--border-color);
 }
 
-.skillSection .content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
 .archivingSection {
     border-bottom: 2px dashed var(--border-color);
-}
-
-.archivingSection .content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
 }
 
 .projectSection {
@@ -82,10 +144,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-
-.careerSection {
-
 }
 
 .footer {

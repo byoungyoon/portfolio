@@ -4,10 +4,19 @@ import styles from './navigation.module.css';
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { CSSTransition } from 'react-transition-group';
+import { HiMenu } from 'react-icons/hi';
+import cx from 'classnames';
 
 export default function Navigation() {
   const [top, setTop] = useState(true);
+  const [open, setOpen] = useState(false);
+
   const nodeRef = useRef(null);
+  const navRef = useRef(null);
+
+  const onToggle = () => {
+    setOpen(!open);
+  };
 
   const onScroll = () => {
     setTop(window.scrollY === 0);
@@ -33,10 +42,13 @@ export default function Navigation() {
     >
       <nav ref={nodeRef} className={styles.navbar}>
         <div className={styles.container}>
-          <Link className={styles.title} href={'/#page-top'}>
-            BY Portfolio
-          </Link>
-          <ul className={styles.nav}>
+          <div className={styles.layer}>
+            <Link className={styles.title} href={'/#page-top'}>
+              BY Portfolio
+            </Link>
+            <HiMenu className={styles.hidden} onClick={onToggle} />
+          </div>
+          <ul ref={navRef} className={cx(styles.nav, !open && styles.hidden)}>
             <li>
               <Link href={'/#skills'}>Skills</Link>
             </li>
