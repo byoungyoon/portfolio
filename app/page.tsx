@@ -7,10 +7,10 @@ import { data as ProjectsData } from '@/app/_data/projectsData';
 import { data as CareerData } from '@/app/_data/careerData';
 import Card from '@/app/_component/Card';
 import CardBasic from '@/app/_component/CardBasic';
-import CustomTree from '@/app/_component/CustomTree';
 import { IoIosArrowDown } from 'react-icons/io';
 import CardProject from '@/app/_component/CardProject';
 import CardCareer from '@/app/_component/CardCareer';
+import { CustomTreeNoSSR } from '@/app/_component/CustomTreeNoSSR';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <CustomSakura total={80}>
         <Navigation />
         <header id="header" className={styles.header}>
-          <CustomTree />
+          <CustomTreeNoSSR />
           <div className={styles.headerLayer}>
             <h2 className={styles.headerLayerTitle}>
               안녕하세요. 웹 프론트엔드 개발자 <span className={styles.accent}>이병윤</span>입니다.

@@ -5,7 +5,7 @@ import styles from './customTree.module.css';
 import { useColor } from 'react-color-palette';
 import 'react-color-palette/css';
 import { Tree } from '@byoungyoon/by-asset';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import CustomTreeOption from '@/app/_component/CustomTreeOption';
 
 const sakuraColor = '#ffc5d0';
@@ -13,7 +13,7 @@ const sakuraColor = '#ffc5d0';
 export default function CustomTree() {
   const [option, setOption] = useState({
     reset: 0,
-    level: 3,
+    level: window.innerHeight / 250 - 1,
   });
 
   const [open, setOpen] = useState(false);
@@ -26,10 +26,6 @@ export default function CustomTree() {
   const onReset = () => {
     setOption({ ...option, reset: option.reset + 1 });
   };
-
-  useEffect(() => {
-    setOption({ ...option, level: window.innerHeight / 250 - 1 });
-  }, []);
 
   return (
     <div className={styles.container}>
