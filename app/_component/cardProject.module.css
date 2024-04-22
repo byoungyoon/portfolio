@@ -106,6 +106,10 @@
     min-width: 51px;
 }
 
+.item a {
+    word-break: break-all;
+}
+
 .item a:hover {
     color: var(--border-color);
     transition: color 250ms;

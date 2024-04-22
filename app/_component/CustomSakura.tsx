@@ -9,5 +9,9 @@ type Props = {
 };
 
 export default function CustomSakura({ children, total }: Props) {
-  return <Sakura total={total}>{children}</Sakura>;
+  return (
+    <Sakura total={total} fallSpeed={2.2}>
+      {children}
+    </Sakura>
+  );
 }

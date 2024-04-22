@@ -2,7 +2,7 @@ import styles from './cardProject.module.css';
 
 import Image, { StaticImageData } from 'next/image';
 import CustomSwiper from '@/app/_component/CustomSwiper';
-import Sakura from '@/public/img/sakura.png';
+import Sakura from '@/public/favicon.ico';
 import Link from 'next/link';
 
 type Props = {

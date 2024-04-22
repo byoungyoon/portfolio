@@ -14,6 +14,7 @@ export default function CustomTree() {
   const [open, setOpen] = useState(false);
   const [reset, setReset] = useState(0);
   const [color, setColor] = useColor(sakuraColor);
+  const level = window.innerHeight / 250 - 1;
 
   const onToggle = () => {
     setOpen(!open);
@@ -25,7 +26,15 @@ export default function CustomTree() {
 
   return (
     <div className={styles.container}>
-      <Tree target="header" color={color.hex} reset={reset} isResize={true} defaultDepth={11} defaultCount={2} />
+      <Tree
+        target="header"
+        color={color.hex}
+        reset={reset}
+        isResize={true}
+        defaultDepth={12}
+        defaultCount={2}
+        level={level}
+      />
       <div className={styles.optionLayer}>
         {open && <CustomTreeOption color={color} setColor={setColor} onReset={onReset} />}
         <div className={styles.optionButton} onClick={onToggle}>
