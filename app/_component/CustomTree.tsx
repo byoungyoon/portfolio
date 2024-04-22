@@ -19,6 +19,9 @@ export default function CustomTree() {
   const [open, setOpen] = useState(false);
   const [color, setColor] = useColor(sakuraColor);
 
+  const isMobile =
+    window.navigator.userAgent.indexOf('iPhone') > -1 || window.navigator.userAgent.indexOf('Android') > -1;
+
   const onToggle = () => {
     setOpen(!open);
   };
@@ -29,7 +32,14 @@ export default function CustomTree() {
 
   return (
     <div className={styles.container}>
-      <Tree target="header" isResize={true} color={color.hex} defaultDepth={12} defaultCount={3} {...option} />
+      <Tree
+        target="header"
+        isResize={!isMobile}
+        color={color.hex}
+        defaultDepth={12}
+        defaultCount={isMobile ? 2 : 6}
+        {...option}
+      />
       <div className={styles.optionLayer}>
         {open && <CustomTreeOption color={color} setColor={setColor} onReset={onReset} />}
         <div className={styles.optionButton} onClick={onToggle}>
