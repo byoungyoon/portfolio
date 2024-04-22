@@ -15,7 +15,7 @@ import { CustomTreeNoSSR } from '@/app/_component/CustomTreeNoSSR';
 export default function Home() {
   return (
     <main id="page-top" className={styles.main}>
-      <CustomSakura total={80}>
+      <CustomSakura total={120}>
         <Navigation />
         <header id="header" className={styles.header}>
           <CustomTreeNoSSR />

@@ -43,9 +43,13 @@ export default function CardProject({ subTitle, images, urls, contents, skills }
               <p>{skills.join(', ')}</p>
             </div>
           </article>
-          <div>
-            <button type="button">ReadMe</button>
-            <button type="button">skill</button>
+          <div className={styles.buttonGroup}>
+            <button className="button" type="button">
+              README
+            </button>
+            <button className="button" type="button">
+              SKILL
+            </button>
           </div>
           <div className={styles.border} />
           <article className={styles.infoArticle}>

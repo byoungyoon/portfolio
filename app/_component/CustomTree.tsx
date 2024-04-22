@@ -41,7 +41,7 @@ export default function CustomTree() {
         {...option}
       />
       <div className={styles.optionLayer}>
-        {open && <CustomTreeOption color={color} setColor={setColor} onReset={onReset} />}
+        <CustomTreeOption color={color} setColor={setColor} onReset={onReset} open={open} />
         <div className={styles.optionButton} onClick={onToggle}>
           <GrTreeOption className={styles.option} />
         </div>
