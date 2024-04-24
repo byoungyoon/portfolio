@@ -1,11 +1,11 @@
 'use client';
 
-import Card from '@/app/_component/Card';
-import CardTable from '@/app/_component/CardTable';
 import { Hue, IColor, Saturation } from 'react-color-palette';
 import { Dispatch, SetStateAction, useRef } from 'react';
 import styles from './customTreeOption.module.css';
 import { CSSTransition } from 'react-transition-group';
+import Card from '@/app/(sakura)/_component/Card';
+import CardTable from '@/app/(sakura)/_component/CardTable';
 
 type ColorPickerProps = {
   color: IColor;

@@ -13,6 +13,7 @@ import Modu3 from '@/public/img/modu3.png';
 
 export const data = [
   {
+    key: 'project1',
     title: '모두의 농구장 (리펙토링)',
     subTitle: '개인 프로젝트',
     images: [NModu1, NModu2, NModu3],
@@ -28,6 +29,7 @@ export const data = [
     ],
   },
   {
+    key: 'project2',
     title: '나만의 포토폴리오',
     subTitle: '개인 프로젝트',
     images: [Port1, Port2, Port3],
@@ -43,6 +45,7 @@ export const data = [
     ],
   },
   {
+    key: 'project3',
     title: '모두의 농구장',
     subTitle: '팀 프로젝트 (4인)',
     images: [Modu1, Modu2, Modu3],
@@ -58,6 +61,7 @@ export const data = [
     ],
   },
   {
+    key: 'project4',
     title: '나만의 아이템',
     subTitle: '개인 작업물',
     images: [Item1, Item2, Item3],

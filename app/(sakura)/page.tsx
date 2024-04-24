@@ -1,16 +1,17 @@
 import styles from './page.module.css';
-import Navigation from '@/app/_component/Navigation';
-import CustomSakura from '@/app/_component/CustomSakura';
 import { data as ArchivingData } from '@/app/_data/archivingData';
 import { data as SkillsData } from '@/app/_data/skillsData';
 import { data as ProjectsData } from '@/app/_data/projectsData';
 import { data as CareerData } from '@/app/_data/careerData';
-import Card from '@/app/_component/Card';
-import CardBasic from '@/app/_component/CardBasic';
+import CustomSakura from '@/app/(sakura)/_component/CustomSakura';
+import Navigation from '@/app/(sakura)/_component/Navigation';
+import { CustomTreeNoSSR } from '@/app/(sakura)/_component/CustomTreeNoSSR';
 import { IoIosArrowDown } from 'react-icons/io';
-import CardProject from '@/app/_component/CardProject';
-import CardCareer from '@/app/_component/CardCareer';
-import { CustomTreeNoSSR } from '@/app/_component/CustomTreeNoSSR';
+import Card from '@/app/(sakura)/_component/Card';
+import CardBasic from '@/app/(sakura)/_component/CardBasic';
+import CardProject from '@/app/(sakura)/_component/CardProject';
+import CardCareer from '@/app/(sakura)/_component/CardCareer';
+import Link from 'next/link';
 
 export default function Home() {
   return (

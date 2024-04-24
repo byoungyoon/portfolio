@@ -6,7 +6,7 @@ import { useColor } from 'react-color-palette';
 import 'react-color-palette/css';
 import { Tree } from '@byoungyoon/by-asset';
 import { useState } from 'react';
-import CustomTreeOption from '@/app/_component/CustomTreeOption';
+import CustomTreeOption from '@/app/(sakura)/_component/CustomTreeOption';
 
 const sakuraColor = '#ffc5d0';
 

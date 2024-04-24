@@ -1,11 +1,12 @@
 import styles from './cardProject.module.css';
 
 import Image, { StaticImageData } from 'next/image';
-import CustomSwiper from '@/app/_component/CustomSwiper';
 import Sakura from '@/public/favicon.ico';
 import Link from 'next/link';
+import CustomSwiper from '@/app/(sakura)/_component/CustomSwiper';
 
 type Props = {
+  key: string;
   subTitle: string;
   images: StaticImageData[];
   urls: {
@@ -16,7 +17,7 @@ type Props = {
   skills: string[];
 };
 
-export default function CardProject({ subTitle, images, urls, contents, skills }: Props) {
+export default function CardProject({ key, subTitle, images, urls, contents, skills }: Props) {
   const ImageJSX = images.map((image, index) => <Image key={index} className={styles.image} src={image} alt="image" />);
 
   return (
@@ -44,12 +45,16 @@ export default function CardProject({ subTitle, images, urls, contents, skills }
             </div>
           </article>
           <div className={styles.buttonGroup}>
-            <button className="button" type="button">
-              README
-            </button>
-            <button className="button" type="button">
-              SKILL
-            </button>
+            <Link href={`/i/${key}/readme`}>
+              <button className="button" type="button">
+                README
+              </button>
+            </Link>
+            <Link href={`/i/${key}/skill`}>
+              <button className="button" type="button">
+                SKILL
+              </button>
+            </Link>
           </div>
           <div className={styles.border} />
           <article className={styles.infoArticle}>
