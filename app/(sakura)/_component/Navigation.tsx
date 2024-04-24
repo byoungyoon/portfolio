@@ -19,8 +19,6 @@ export default function Navigation() {
   };
 
   const onScroll = () => {
-    console.log(window.scrollY);
-
     setTop(window.scrollY === 0);
   };
 
@@ -30,8 +28,6 @@ export default function Navigation() {
 
     return () => document.removeEventListener('scroll', onScroll);
   }, []);
-
-  console.log(top);
 
   return (
     <CSSTransition

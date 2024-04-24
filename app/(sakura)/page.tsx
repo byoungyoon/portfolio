@@ -11,7 +11,6 @@ import Card from '@/app/(sakura)/_component/Card';
 import CardBasic from '@/app/(sakura)/_component/CardBasic';
 import CardProject from '@/app/(sakura)/_component/CardProject';
 import CardCareer from '@/app/(sakura)/_component/CardCareer';
-import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -77,10 +76,10 @@ export default function Home() {
             </div>
           </section>
         </div>
+        <footer className={styles.footer}>
+          Copyright 2024. Web Front-end developer portfolio -- &nbsp; <b>Lee Byoungyoon</b>
+        </footer>
       </CustomSakura>
-      <footer className={styles.footer}>
-        Copyright 2024. Web Front-end developer portfolio -- &nbsp; <b>Lee Byoungyoon</b>
-      </footer>
     </main>
   );
 }

@@ -6,7 +6,7 @@ import Link from 'next/link';
 import CustomSwiper from '@/app/(sakura)/_component/CustomSwiper';
 
 type Props = {
-  key: string;
+  id: string;
   subTitle: string;
   images: StaticImageData[];
   urls: {
@@ -17,7 +17,7 @@ type Props = {
   skills: string[];
 };
 
-export default function CardProject({ key, subTitle, images, urls, contents, skills }: Props) {
+export default function CardProject({ id, subTitle, images, urls, contents, skills }: Props) {
   const ImageJSX = images.map((image, index) => <Image key={index} className={styles.image} src={image} alt="image" />);
 
   return (
@@ -45,12 +45,12 @@ export default function CardProject({ key, subTitle, images, urls, contents, ski
             </div>
           </article>
           <div className={styles.buttonGroup}>
-            <Link href={`/i/${key}/readme`}>
+            <Link href={`/i/${id}/readme`}>
               <button className="button" type="button">
                 README
               </button>
             </Link>
-            <Link href={`/i/${key}/skill`}>
+            <Link href={`/i/${id}/skill`}>
               <button className="button" type="button">
                 SKILL
               </button>
