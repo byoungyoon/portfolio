@@ -38,6 +38,19 @@ section {
     padding: 100px 0;
 }
 
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--main-color-gray); /* 스크롤바 색상 */
+    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--main-background-color);  /*스크롤바 뒷 배경 색상*/
+}
+
 .button {
     cursor: pointer;
     position: relative;

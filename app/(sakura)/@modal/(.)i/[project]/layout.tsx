@@ -1,4 +1,4 @@
-import CustomModal from '@/app/(sakura)/_component/CustomModal';
+import CustomModal from '@/app/(sakura)/@modal/(.)i/[project]/_component/CustomModal';
 import { ReactNode } from 'react';
 
 type Props = {

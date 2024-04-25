@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import CustomModal from '@/app/(sakura)/_component/CustomModal';
+import CustomModal from '@/app/(sakura)/@modal/(.)i/[project]/_component/CustomModal';
 
 type Props = {
   children: ReactNode;
