@@ -50,11 +50,11 @@ export default function CardProject({ id, subTitle, images, urls, contents, skil
                 README
               </button>
             </Link>
-            <Link href={`/i/${id}/skill`}>
-              <button className="button" type="button">
-                SKILL
-              </button>
-            </Link>
+            {/*<Link href={`/i/${id}/skill`}>*/}
+            {/*  <button className="button" type="button">*/}
+            {/*    SKILL*/}
+            {/*  </button>*/}
+            {/*</Link>*/}
           </div>
           <div className={styles.border} />
           <article className={styles.infoArticle}>

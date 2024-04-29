@@ -2,7 +2,7 @@
 
 import styles from './customModal.module.css';
 import { MouseEventHandler, ReactNode } from 'react';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { MdClose } from 'react-icons/md';
 
 type Props = {
@@ -11,6 +11,7 @@ type Props = {
 
 export default function CustomModal({ children }: Props) {
   const router = useRouter();
+  const pathname = usePathname();
 
   const onClickIcon = () => {
     router.back();

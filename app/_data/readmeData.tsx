@@ -3,7 +3,7 @@ export const data: { [key: string]: string } = {
 > React로 베포된 모두의 농구장을 혼자서 MSW로 연결하여 Next로 리펙토링
 
 
-![readme.png](https://github.com/NeewLife/modubasketball/assets/107593357/af370471-9138-4f20-844d-43ada13e7c84)
+![readme.png](https://i.ibb.co/Df9ZVy5/readme.png)
 - 베포 URL: http://43.201.82.253:3000/
 
 ### 프로젝트 소개
@@ -123,7 +123,7 @@ root
 > Next로 제작한 봄의 테마를 가진 나만의 포토폴리오
 
 
-![readme.png](@/../public/img/readme.png)
+![readme.png](https://i.ibb.co/HPjHMJd/readme.png)
 - 베포 URL: https://sss-portfolio.vercel.app/
 
 ### 프로젝트 소개
