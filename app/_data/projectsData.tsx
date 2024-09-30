@@ -23,10 +23,7 @@ export const data = [
       '바뀐 로직으로는 Modal에 대해서 라우팅으로 구현하였고, React-Query를 도입하여 캐싱으로 데이터 재사용을 하였으며 Suspense를 통한 스트리밍을 구현하였습니다.',
     ],
     skills: ['Next.js', 'React-Query', 'MSW', 'Vanilla Extract', 'Zustand'],
-    urls: [
-      { key: 'GitHub', value: 'https://github.com/byoungyoon/modu-next' },
-      { key: 'URL', value: 'http://43.201.82.253:3000' },
-    ],
+    urls: [{ key: 'GitHub', value: 'https://github.com/byoungyoon/modu-next' }],
   },
   {
     id: 'project2',
@@ -55,10 +52,7 @@ export const data = [
       '개발은 atomic 디자인 패턴을 중심으로 storybook을 이용하여 디자이너와 기획자에게 UI/UX를 지속적으로 제공하여 피드백을 받으면서 진행하였습니다.',
     ],
     skills: ['React.js', 'Webpack', 'Tailwindcss', 'Storybook', 'Zustand', 'Axios'],
-    urls: [
-      { key: 'GitHub', value: 'https://github.com/NeewLife/modubasketball' },
-      { key: 'URL', value: 'https://modubasketball.com' },
-    ],
+    urls: [{ key: 'GitHub', value: 'https://github.com/NeewLife/modubasketball' }],
   },
   {
     id: 'project4',
